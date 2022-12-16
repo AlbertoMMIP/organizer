@@ -347,6 +347,12 @@
       "Mesa": "6"
     },
     {
+      "Nombre": "JESUS",
+      "Apellido": "NORIEGA",
+      "Parentesco": "CHUCHO",
+      "Mesa": "6"
+    },
+    {
       "Nombre": "CONCHA",
       "Apellido": "NORIEGA",
       "Parentesco": "",
@@ -513,6 +519,12 @@
       "Nombre": "ESTEBAN",
       "Apellido": "ALCANTARA",
       "Parentesco": "NOVIA",
+      "Mesa": "8"
+    },
+    {
+      "Nombre": "SALMONELLO",
+      "Apellido": "",
+      "Parentesco": "BUENOS AIRES",
       "Mesa": "8"
     },
     {

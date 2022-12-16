@@ -17,7 +17,7 @@ const Search = () => {
     if (!txtSearch) return;
     if (labelButton === 'Buscar Mesa') {
       setLableButton('Nueva búsqueda')
-      const txtUpper = txtSearch.toUpperCase();
+      const txtUpper = txtSearch.trim().toUpperCase();
       const results = guests.filter(item => item.Nombre.includes(txtUpper) ||
         item.Apellido.includes(txtUpper) ||
         item.Mesa.includes(txtUpper))
@@ -50,14 +50,27 @@ const Search = () => {
                     />
                   </div>
                   <div className="uk-margin">
-                    <button className="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom"  type="submit">{labelButton}</button>
+                    <button className="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom"  type="submit" href="#result">{labelButton}</button>
+                  </div>
+                  <div className="uk-margin uk-text-justify">
+                    <div>
+                      <h6>En la parte de buscar: </h6>
+                      <ul class="uk-list uk-list-collapse uk-list-square">
+                          <li>Buscar solo por nombre o por apellido o por numero de mesa</li>
+                          <li>No poner acentos</li>
+                      </ul>
+                    </div>
+                    <p className="uk-text-meta">Ejemplo por nombre: tania</p>
+                    <p className="uk-text-meta">Ejemplo por apellido: martinez</p>
+                    <p className="uk-text-meta">Ejemplo por mesa: 18</p>
+                    <p className="uk-text-meta">Para hacer una nueva búsqueda hay que apretar el botón que limpia la pantalla e ingresar el nombre nuevamente</p>
                   </div>
                 </form>
               </div>
             </center>
           </div>
         </div>
-        <div className="uk-section uk-section-large uk-section-muted">
+        <div id="result" className="uk-section uk-section-large uk-section-muted">
           <div className="uk-container">
             <table className="uk-table uk-table-justify uk-table-divider">
             <caption>Lista de invitados</caption>
