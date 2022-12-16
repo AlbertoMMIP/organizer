@@ -28,6 +28,16 @@
   color: #61dafb;
 }
 
+
+.custome-title {
+  margin: 0;
+  padding: 0;
+  font-size: 4em;
+  font-family: 'Lobster', cursive;
+  font-weight: 800;
+  color: whitesmoke;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
